@@ -43,6 +43,7 @@ namespace AddroText
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,8 +55,8 @@ namespace AddroText
 			this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.MainBody = new System.Windows.Forms.TextBox();
 			this.barkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.MainBody = new System.Windows.Forms.TextBox();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -149,6 +150,13 @@ namespace AddroText
 			this.aboutToolStripMenuItem.Text = "About";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
 			// 
+			// barkToolStripMenuItem
+			// 
+			this.barkToolStripMenuItem.Name = "barkToolStripMenuItem";
+			this.barkToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.barkToolStripMenuItem.Text = "Bark";
+			this.barkToolStripMenuItem.Click += new System.EventHandler(this.barkToolStripMenuItem_Click);
+			// 
 			// MainBody
 			// 
 			this.MainBody.AcceptsReturn = true;
@@ -160,13 +168,6 @@ namespace AddroText
 			this.MainBody.Size = new System.Drawing.Size(384, 538);
 			this.MainBody.TabIndex = 1;
 			// 
-			// barkToolStripMenuItem
-			// 
-			this.barkToolStripMenuItem.Name = "barkToolStripMenuItem";
-			this.barkToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-			this.barkToolStripMenuItem.Text = "Bark";
-			this.barkToolStripMenuItem.Click += new System.EventHandler(this.barkToolStripMenuItem_Click);
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +175,7 @@ namespace AddroText
 			this.ClientSize = new System.Drawing.Size(384, 562);
 			this.Controls.Add(this.MainBody);
 			this.Controls.Add(this.menuStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "AddroText";
