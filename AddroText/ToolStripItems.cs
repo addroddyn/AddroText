@@ -45,7 +45,9 @@ namespace AddroText
 		
 		void AboutToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			MessageBox.Show("(c) Created by addroddyn, 2016. \r\n tamas.s.istvan@gmail.com");
+			string about = "(c) Created by addroddyn, 2016. \r\n tamas.s.istvan@gmail.com";
+			about += "\n Icons from www.iconfinder.com";
+			MessageBox.Show(about);
 		}
 		
 		void FontToolStripMenuItemClick(object sender, EventArgs e)
